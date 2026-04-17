@@ -1,0 +1,82 @@
+INICIO
+
+MOSTRAR "Ingrese usuario"
+LEER usuario
+
+MOSTRAR "Ingrese contraseña"
+LEER contraseña
+
+SI usuario == "admin" Y contraseña == "1234" ENTONCES
+    MOSTRAR "Acceso correcto"
+SINO
+    MOSTRAR "Usuario o contraseña incorrectos"
+FIN SI
+
+FIN
+INICIO
+
+MOSTRAR "Ingrese tipo de residuo (plastico, vidrio, papel)"
+LEER residuo
+
+SI residuo == "plastico" ENTONCES
+    MOSTRAR "Depositar en contenedor amarillo"
+SINO SI residuo == "vidrio" ENTONCES
+    MOSTRAR "Depositar en contenedor verde"
+SINO SI residuo == "papel" ENTONCES
+    MOSTRAR "Depositar en contenedor azul"
+SINO
+    MOSTRAR "Tipo de residuo no válido"
+FIN SI
+INICIO
+
+MOSTRAR "Ingrese nombre del comerciante"
+LEER nombre
+
+MOSTRAR "¿Tiene permiso? (si/no)"
+LEER permiso
+
+SI permiso == "si" ENTONCES
+    MOSTRAR "Puede operar normalmente"
+SINO
+    MOSTRAR "Debe solicitar permiso en la municipalidad"
+FIN SI
+
+FIN
+
+INICIO
+
+MOSTRAR "Ingrese tipo de problema (calle, puente, alumbrado)"
+LEER problema
+
+SI problema == "calle" ENTONCES
+    MOSTRAR "Reporte enviado a mantenimiento vial"
+SINO SI problema == "puente" ENTONCES
+    MOSTRAR "Reporte enviado a obras públicas"
+SINO SI problema == "alumbrado" ENTONCES
+    MOSTRAR "Reporte enviado a electricidad"
+SINO
+    MOSTRAR "Problema no reconocido"
+FIN SI
+
+FIN
+
+
+INICIO
+
+MOSTRAR "Ingrese nombre del sitio histórico"
+LEER sitio
+
+MOSTRAR "¿Está en buen estado? (si/no)"
+LEER estado
+
+SI estado == "si" ENTONCES
+    MOSTRAR "El sitio se mantiene en buen estado"
+SINO
+    MOSTRAR "Se debe programar restauración"
+FIN SI
+
+FIN
+
+
+
+
